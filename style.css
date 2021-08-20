@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0;
+    padding: 0;
+    font-family: 'Anakotmai';
+}
+
+.header {
+    /* overflow: hidden;
+    background-color: white; */
+    box-shadow: 0 1px 50px rgb(209, 209, 209);
+    padding: 5px 5px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.header a {
+    /* float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px; */
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+.logo img {
+    width: 300px;
+    height: 100px;
+}
+
+.header a:hover {
+    background-color: #dddddd;
+    color: black;
+    border-radius: 5px;
+}
+
+.header a.active {
+    background-color: #39A9DB;
+    color: white;
+    border-radius: 5px;
+}
+
+.header-right {
+    float: right;
+    padding: 25px 150px;
+}
+
+label {
+    font-size: 40px;
+    color: #39A9DB;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    /* .header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-right {
+        float: none;
+        padding: 0 0;
+    }
+    .logo {
+        width: auto;
+        height: auto;
+        margin: 0 10px 0 20px;
+    } */
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .header-right{
+        text-align: center;
+        width: 100%;
+
+    }
+    .header-right a{
+        display: block;
+    }
+}
